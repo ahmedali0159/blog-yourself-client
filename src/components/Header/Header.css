@@ -1,4 +1,5 @@
 .navbar{
+    background-color: skyblue;
     height: 80px;
     display: flex;
     justify-content: center;

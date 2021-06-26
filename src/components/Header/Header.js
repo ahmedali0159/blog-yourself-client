@@ -15,13 +15,13 @@ export default function Header() {
                     </Link>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li  className="nav-item">
-                            {/* <NavLink to="/about" activeClassName="active" className="nav-links"
-                            onClick={handleClick}>
-                                About
-                            </NavLink> */}
                             <NavLink to="/" activeClassName="active" className="nav-links"
                             onClick={handleClick}>
                                 Home
+                            </NavLink>
+                            <NavLink to="/blogs" style={{color:'#000'}} activeClassName="active" className="nav-links"
+                            onClick={handleClick}>
+                                Blogs
                             </NavLink>
                         </li>
                     </ul>

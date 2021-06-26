@@ -18,7 +18,7 @@ export default function AddBlog() {
       imageURL: imageURL,
       content: data.content
     };
-     const url = `http://localhost:5000/addEvent`;
+     const url = (`https://polar-forest-65976.herokuapp.com/addEvent`);
      console.log(eventData);
      fetch(url, {
       method: 'POST',

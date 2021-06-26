@@ -6,7 +6,7 @@ export default function Post() {
     const [post, setPost] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/events')
+        fetch('https://polar-forest-65976.herokuapp.com/events')
         .then(res => res.json())
         .then(data => setPost(data))
     }, [])

@@ -47,22 +47,25 @@ export default function AddBlog() {
   }
   return (
     <div className="main">
+      <h1 className="text-center mb-5">Add Post</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          className="type-input"
+          className="form-control"
           name="name"
           placeholder="Enter a Title"
           {...register("title")}
         />
-        <input
-          className="type-input"
+        <br />
+        <textarea
+          className="form-control"
+          rows="3"
           name="price"
           placeholder="Enter a Content"
           {...register("content")}
         />
         <br />
         <input
-          className="type-input"
+          className="form-control"
           name="exampleRequired"
           type="file"
           placeholder="Add Cover Image"
@@ -71,7 +74,7 @@ export default function AddBlog() {
         {errors.exampleRequired && <span>This field is required</span>}
 
         <br />
-        <input className="button-color" value="Submit" type="submit" />
+        <input className="btn btn-rounded" style={{background:'#5352ed', border:'1px solid #5352ed', color:'black'}} value="Submit" type="submit" />
       </form>
     </div>
   );

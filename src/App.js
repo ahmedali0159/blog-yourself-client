@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,8 +9,10 @@ import AddBlog from "./components/AddBlog/AddBlog";
 import Blogs from "./components/Blogs/Blogs";
 import Home from './components/Home/Home';
 import PostDetails from "./components/PostDetails/PostDetails";
+import Login from "./components/Login/Login";
 
 function App() {
+ 
   return (
     <Router>
       <div>
@@ -26,6 +28,9 @@ function App() {
           </Route>
           <Route path="/event/:_id">
              <PostDetails />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </div>

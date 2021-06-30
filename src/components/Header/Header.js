@@ -23,6 +23,10 @@ export default function Header() {
                             onClick={handleClick}>
                                 Blogs
                             </NavLink>
+                            <NavLink to="/login" style={{color:'#000'}} activeClassName="active" className="nav-links"
+                            onClick={handleClick}>
+                                 Login
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>

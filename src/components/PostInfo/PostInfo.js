@@ -15,7 +15,7 @@ export default function PostInfo(props) {
         <div className="text-center border-top-0 mb-1">
           <button
             onClick={() => history.push(`event/${_id}`)}
-            class="btn btn-success "
+            style={{background:'#5352ed', border:'1px solid #5352ed', color:'black'}}
           >
             View Details
           </button>
